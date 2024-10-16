@@ -1,0 +1,14 @@
+{
+  "stack": "nodejs",
+  "memory": 4096,
+  "ttl": 43200,
+  "timeout": 20000,
+  "minReplicas": 10,
+  "maxReplicas": 400,
+  "routes": {
+    "giftcardProvider": {
+      "path": "/giftcard-hub/*path",
+      "public": true
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema",
+  "vendor": "vtex",
+  "name": "proxy-giftcard-hub",
+  "version": "2.0.9",
+  "title": "Hub to handle GiftCard provider requests",
+  "credentialType": "absolute",
+  "builders": {
+    "node": "6.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "1c383d6c-ec4c-4404-a7ab-711aa5a9864b.mock.pstmn.io",
+        "path": "*"
+      }
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "angelamolano.vtexcommercestable.com.br",
+        "path": "/api/checkout/pub/orderForm/*"
+      }
+    }
+  ]
+}

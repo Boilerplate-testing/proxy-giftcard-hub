@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "co-body": "^6.1.0",
+    "crypto": "^1.0.1",
+    "ramda": "^0.26.1"
+  },
+  "devDependencies": {
+    "@types/co-body": "^5.1.0",
+    "@types/ramda": "^0.26.21",
+    "@vtex/api": "6.47.0",
+    "tslint": "^5.14.0",
+    "tslint-config-vtex": "^2.1.0",
+    "typescript": "3.9.7"
+  },
+  "scripts": {
+    "lint": "tsc --noEmit && tslint --fix -c tslint.json './**/*.ts'"
+  },
+  "version": "0.10.1"
+}
